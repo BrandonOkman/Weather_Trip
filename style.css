@@ -41,3 +41,14 @@ input[type=text] {
 p {
     margin: 1em;
 }
+
+/* Custom IDs */
+
+#form {
+    border-bottom: 1px solid #373737;
+    padding-bottom: 8%;
+}
+
+#history {
+    margin-top: 2em;
+}
