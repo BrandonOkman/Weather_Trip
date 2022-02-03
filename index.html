@@ -17,6 +17,61 @@
 </head>
 
 <body>
-    </body>
+  <!-- Index HTML File -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Weather Forecasts</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Merriweather+Sans&family=Roboto:ital,wght@1,300;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        Weather Dashboard
+    </div>
+    <!-- Main container -->
+    <div class="container">
+        <div class="search">
+            <form id="form">
+                <h1 class="title">Search for a City</h1>
+                <input type="text" name="city" id="city" placeholder="Select a City"> <br>
+                <button class="submit" id="submit">Search</button>
+            </form>
+            <!-- Display for history buttons -->
+            <div id="history">
+                <div id="historyItems"></div>
+            </div>
+        </div>
+        <!-- Display for API data -->
+        <div class="results">
+            <div class="daily">
+                <div class="day">
+                </div>
+                <div class="dayForecast"></div>
+            </div>
+            <br>
+            <h1>5 Day Forecast </h1>
+            <div class="weekForecast"></div>
+        </div>
+    </div>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>  
+</body>
 
 </html>
