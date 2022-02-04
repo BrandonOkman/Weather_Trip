@@ -169,3 +169,26 @@ p {
     position: absolute;
     margin-top: -1em;
 }
+
+/* Media Queries  */
+
+@media screen and (min-width: 900px) {
+    .search {
+        width: 20vw;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .search {
+        width: 70vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .day {
+        margin: 0 auto;
+    }
+}
