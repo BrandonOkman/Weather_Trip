@@ -52,3 +52,120 @@ p {
 #history {
     margin-top: 2em;
 }
+
+/* Custom Classes */
+
+.submit {
+    background-color: #5ba1e9;
+    color: white;
+}
+
+.banner {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
+    background-image: linear-gradient(to right, rgba(59, 109, 299), rgba(36, 4, 85));
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.historyItem {
+    padding: 2%;
+    background-color: gainsboro;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+.historyBtn {
+    width: 100%;
+    margin-bottom: 3%;
+    background-color: #b7b7b7;
+    font-size: 1em;
+}
+
+.daily {
+    width: 135%;
+    height: 25%;
+    padding: 5%;
+    padding-bottom: 5%;
+    padding-top: 1%;
+    border: 1px solid black;
+}
+
+.day {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.dayForecast {
+    margin-top: 1%;
+}
+
+.weekForecast {
+    margin: 1%;
+    margin-left: 0%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 150%;
+}
+
+.forecastItem {
+    margin-bottom: 3%;
+}
+
+.search {
+    width: 20vw;
+    padding: 3%;
+    padding-top: 0;
+}
+
+.delete {
+    background-color: crimson;
+    float: right;
+}
+
+.icon {
+    width: 33%;
+}
+
+.weeklyForecastDay {
+    background-color: #33475a;
+    padding: 2%;
+    color: white;
+    font-weight: 500;
+    width: 20%;
+    margin-left: 1%;
+    width: fit-content;
+    margin-bottom: 3%;
+}
+
+.uvi,
+.inline {
+    display: inline;
+    margin-right: 0;
+}
+
+.dayData {
+    margin-bottom: 2%;
+}
+
+.uvi {
+    margin: 0;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: .5%;
+    padding-top: .5%;
+    border-radius: 5px;
+    display: inline;
+    color: white;
+}
+
+.ico {
+    position: absolute;
+    margin-top: -1em;
+}
