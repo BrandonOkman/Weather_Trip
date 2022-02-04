@@ -56,3 +56,44 @@ function makeHistoryButtons() {
         //     localStorage.removeItem('history');
 
         // });
+        cityButton.click(function(e) {
+            dayForecast.text('');
+            weekForecast.text('');
+            let city = cityButton.text();
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+            fetch(url)
+                .then(response => {
+                    return response.json();
+                })
+                .then(data => {
+                    city = city.toLowerCase();
+                    city = city.charAt(0).toUpperCase() + city.slice(1);
+                    if (city === '') {
+                        return
+                    }
+                    if (history.includes(city) === false) {
+                        history.push(city);
+                        localStorage.setItem('history', JSON.stringify(history));
+                    };
+                    historyEl.text(history);
+                    weekForecast.empty();
+                    city = data.name;
+                    day.text(city + ' ' + date).addClass('current');
+                    let lon = data.coord.lon;
+                    let lat = data.coord.lat;
+                    let iconPic;
+                    async function getIconPic() {
+                        await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`)
+                            .then(response => {
+                                return response.json();
+                            })
+                            .then(data => {
+                                iconPic = data.list[0].weather[0].icon;
+                                return iconPic
+                            });
+                        let iconUrl = `http://openweathermap.org/img/wn/${iconPic}@2x.png`;
+                        let iconImg = $(`<img class="ico" src="${iconUrl}">`);
+                        day.text(city + ' ' + date).addClass('current');
+                        day.append(iconImg);
+
+                    }
