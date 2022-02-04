@@ -1,4 +1,5 @@
 /* HTML Elements */
+
 body {
     font-family: 'Inconsolata', monospace;
     font-family: 'Merriweather Sans', sans-serif;
@@ -42,6 +43,7 @@ p {
     margin: 1em;
 }
 
+
 /* Custom IDs */
 
 #form {
@@ -52,6 +54,7 @@ p {
 #history {
     margin-top: 2em;
 }
+
 
 /* Custom Classes */
 
@@ -169,6 +172,7 @@ p {
     position: absolute;
     margin-top: -1em;
 }
+
 
 /* Media Queries  */
 
